@@ -19,7 +19,7 @@ function App() {
       year: "2023",
       specs: ["2.5л", "5 мест", "передний привод"],
       price: "от 35.000 ₸/день",
-      photos: ["/public/cars/Hyundai Sonata/sonata_1.png", "/public/cars/Hyundai Sonata/sonata_2.png", "/public/cars/Hyundai Sonata/sonata_3.png", "/public/cars/Hyundai Sonata/sonata_4.png","/public/cars/Hyundai Sonata/sonata_5.png", "/public/cars/Hyundai Sonata/sonata_6.png", "/public/cars/Hyundai Sonata/sonata_7.png", "/public/cars/Hyundai Sonata/sonata_8.png"],
+      photos: ["/cars/Hyundai Sonata/sonata_1.png", "/cars/Hyundai Sonata/sonata_2.png", "/cars/Hyundai Sonata/sonata_3.png", "/cars/Hyundai Sonata/sonata_4.png","/cars/Hyundai Sonata/sonata_5.png", "/cars/Hyundai Sonata/sonata_6.png", "/cars/Hyundai Sonata/sonata_7.png", "/cars/Hyundai Sonata/sonata_8.png"],
     },
     {
       name: "Toyota Rav 4",
@@ -123,7 +123,7 @@ function App() {
   };
 
   return (
-    <div className="app">
+  <div className="app">
       <header className="navbar">
         <div className="logo">ADC<span>Rent</span></div>
         <nav>
