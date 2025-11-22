@@ -26,77 +26,77 @@ function App() {
       year: "2024",
       specs: ["2.5л", "5 мест", "передний привод"],
       price: "от 40.000 ₸/день",
-      photos: ["/public/cars/Toyota RAV4/RAV4_1.png", "/public/cars/Toyota RAV4/RAV4_2.png", "/public/cars/Toyota RAV4/RAV4_3.png", "/public/cars/Toyota RAV4/RAV4_4.png", "/public/cars/Toyota RAV4/RAV4_5.png", "/public/cars/Toyota RAV4/RAV4_6.png", "/public/cars/Toyota RAV4/RAV4_7.png", "/public/cars/Toyota RAV4/RAV4_8.png", "/public/cars/Toyota RAV4/RAV4_9.png", "/public/cars/Toyota RAV4/RAV4_10.png"],
+      photos: ["/cars/Toyota RAV4/RAV4_1.png", "/cars/Toyota RAV4/RAV4_2.png", "/cars/Toyota RAV4/RAV4_3.png", "/cars/Toyota RAV4/RAV4_4.png", "/cars/Toyota RAV4/RAV4_5.png", "/cars/Toyota RAV4/RAV4_6.png", "/cars/Toyota RAV4/RAV4_7.png", "/cars/Toyota RAV4/RAV4_8.png", "/cars/Toyota RAV4/RAV4_9.png", "/cars/Toyota RAV4/RAV4_10.png"],
     },
     {
       name: "Hyundai Elantra",
       year: "2025",
       specs: ["1.6л", "5 мест", "передний привод"],
       price: "от 25.000 ₸/день",
-      photos: ["/public/cars/Hyundai Elantra/elantra_1.png", "/public/cars/Hyundai Elantra/elantra_2.png", "/public/cars/Hyundai Elantra/elantra_3.png", "/public/cars/Hyundai Elantra/elantra_4.png", "/public/cars/Hyundai Elantra/elantra_5.png", "/public/cars/Hyundai Elantra/elantra_6.png", "/public/cars/Hyundai Elantra/elantra_7.png"],
+      photos: ["/cars/Hyundai Elantra/elantra_1.png", "/cars/Hyundai Elantra/elantra_2.png", "/cars/Hyundai Elantra/elantra_3.png", "/cars/Hyundai Elantra/elantra_4.png", "/cars/Hyundai Elantra/elantra_5.png", "/cars/Hyundai Elantra/elantra_6.png", "/cars/Hyundai Elantra/elantra_7.png"],
     },
     {
       name: "TLC 200",
       year: "2014",
       specs: ["4.6л", "7 мест", "полный привод"],
       price: "от 65.000 ₸/день",
-      photos: ["/public/cars/Toyota Land Cruiser/Land Cruiser_1.png", "/public/cars/Toyota Land Cruiser/Land Cruiser_2.png", "/public/cars/Toyota Land Cruiser/Land Cruiser_3.png", "/public/cars/Toyota Land Cruiser/Land Cruiser_4.png", "/public/cars/Toyota Land Cruiser/Land Cruiser_5.png", "/public/cars/Toyota Land Cruiser/Land Cruiser_6.png", "/public/cars/Toyota Land Cruiser/Land Cruiser_7.png", "/public/cars/Toyota Land Cruiser/Land Cruiser_8.png", "/public/cars/Toyota Land Cruiser/Land Cruiser_9.png"],
+      photos: ["/cars/Toyota Land Cruiser/Land Cruiser_1.png", "/cars/Toyota Land Cruiser/Land Cruiser_2.png", "/cars/Toyota Land Cruiser/Land Cruiser_3.png", "/cars/Toyota Land Cruiser/Land Cruiser_4.png", "/cars/Toyota Land Cruiser/Land Cruiser_5.png", "/cars/Toyota Land Cruiser/Land Cruiser_6.png", "/cars/Toyota Land Cruiser/Land Cruiser_7.png", "/cars/Toyota Land Cruiser/Land Cruiser_8.png", "/cars/Toyota Land Cruiser/Land Cruiser_9.png"],
     },
     {
       name: "Li L6",
       year: "2024",
       specs: ["гибрид", "7 мест", "полный привод"],
       price: "от 75.000 ₸/день",
-      photos: ["/public/cars/Li L6/L6_1.png", "/public/cars/Li L6/L6_2.png", "/public/cars/Li L6/L6_3.png", "/public/cars/Li L6/L6_4.png", "/public/cars/Li L6/L6_5.png", "/public/cars/Li L6/L6_6.png"],
+      photos: ["/cars/Li L6/L6_1.png", "/cars/Li L6/L6_2.png", "/cars/Li L6/L6_3.png", "/cars/Li L6/L6_4.png", "/cars/Li L6/L6_5.png", "/cars/Li L6/L6_6.png"],
     },
     {
       name: "Toyota Alphard",
       year: "2020",
       specs: ["3.5л", "6 мест", "передний привод"],
       price: "от 60.000 ₸/день",
-      photos: ["/public/cars/Toyota Alphard/alphard_1.png", "/public/cars/Toyota Alphard/alphard_2.png", "/public/cars/Toyota Alphard/alphard_3.png", "/public/cars/Toyota Alphard/alphard_4.png", "/public/cars/Toyota Alphard/alphard_5.png", "/public/cars/Toyota Alphard/alphard_6.png","/public/cars/Toyota Alphard/alphard_7.png"],
+      photos: ["/cars/Toyota Alphard/alphard_1.png", "/cars/Toyota Alphard/alphard_2.png", "/cars/Toyota Alphard/alphard_3.png", "/cars/Toyota Alphard/alphard_4.png", "/cars/Toyota Alphard/alphard_5.png", "/cars/Toyota Alphard/alphard_6.png","/cars/Toyota Alphard/alphard_7.png"],
     },
     {
       name: "BMW 530i",
       year: "2021",
       specs: ["2.0л", "5 мест", "задний привод"],
       price: "от 120.000 ₸/день",
-      photos: ["/public/cars/BMW 530/bmw_1.png", "/public/cars/BMW 530/bmw_2.png", "/public/cars/BMW 530/bmw_3.png", "/public/cars/BMW 530/bmw_4.png", "/public/cars/BMW 530/bmw_5.png", "/public/cars/BMW 530/bmw_6.png", "/public/cars/BMW 530/bmw_7.png", "/public/cars/BMW 530/bmw_8.png", "/public/cars/BMW 530/bmw_9.png","/public/cars/BMW 530/bmw_10.png"],
+      photos: ["/cars/BMW 530/bmw_1.png", "/cars/BMW 530/bmw_2.png", "/cars/BMW 530/bmw_3.png", "/cars/BMW 530/bmw_4.png", "/cars/BMW 530/bmw_5.png", "/cars/BMW 530/bmw_6.png", "/cars/BMW 530/bmw_7.png", "/cars/BMW 530/bmw_8.png", "/cars/BMW 530/bmw_9.png","/cars/BMW 530/bmw_10.png"],
     },
     {
       name: "Kia Seltos",
       year: "2025",
       specs: ["1.6л", "5 мест", "передний привод"],
       price: "от 30.000 ₸/день",
-      photos: ["/public/cars/Kia Seltos/seltos_1.png", "/public/cars/Kia Seltos/seltos_2.png", "/public/cars/Kia Seltos/seltos_3.png", "/public/cars/Kia Seltos/seltos_4.png", "/public/cars/Kia Seltos/seltos_5.png"],
+      photos: ["/cars/Kia Seltos/seltos_1.png", "/cars/Kia Seltos/seltos_2.png", "/cars/Kia Seltos/seltos_3.png", "/cars/Kia Seltos/seltos_4.png", "/cars/Kia Seltos/seltos_5.png"],
     },
     {
       name: "Lexus 570",
       year: "2016",
       specs: ["5.7л", "7 мест", "полный привод"],
       price: "от 150.000 ₸/день",
-      photos: ["/public/cars/Lexus 570 2016/Lx570_1.png", "/public/cars/Lexus 570 2016/Lx570_2.png", "/public/cars/Lexus 570 2016/Lx570_3.png", "/public/cars/Lexus 570 2016/Lx570_4.png", "/public/cars/Lexus 570 2016/Lx570_5.png", "/public/cars/Lexus 570 2016/Lx570_6.png", "/public/cars/Lexus 570 2016/Lx570_7.png", "/public/cars/Lexus 570 2016/Lx570_8.png"],
+      photos: ["/cars/Lexus 570 2016/Lx570_1.png", "/cars/Lexus 570 2016/Lx570_2.png", "/cars/Lexus 570 2016/Lx570_3.png", "/cars/Lexus 570 2016/Lx570_4.png", "/cars/Lexus 570 2016/Lx570_5.png", "/cars/Lexus 570 2016/Lx570_6.png", "/cars/Lexus 570 2016/Lx570_7.png", "/cars/Lexus 570 2016/Lx570_8.png"],
     }, 
     {
       name: "Mercedes W222" ,
       year: "2018",
       specs: ["4,0л", "5 мест", "полный привод"],
       price: "от 120.000 ₸/день",
-      photos: ["/public/cars/Mercedes W222/w222_1.png", "/public/cars/Mercedes W222/w222_2.png", "/public/cars/Mercedes W222/w222_3.png", "/public/cars/Mercedes W222/w222_4.png", "/public/cars/Mercedes W222/w222_5.png", "/public/cars/Mercedes W222/w222_6.png","/public/cars/Mercedes W222/w222_7.png"],
+      photos: ["/cars/Mercedes W222/w222_1.png", "/cars/Mercedes W222/w222_2.png", "/cars/Mercedes W222/w222_3.png", "/cars/Mercedes W222/w222_4.png", "/cars/Mercedes W222/w222_5.png", "/cars/Mercedes W222/w222_6.png","/cars/Mercedes W222/w222_7.png"],
     },
     {
       name: "Toyota Prado 150",
       year: "2023",
       specs: ["2,7л","7 мест","полный привод"],
       price: "от 70.000 ₸/день",
-      photos: ["/public/cars/Toyota Land Cruiser Prado/prado_1.jpg", "/public/cars/Toyota Land Cruiser Prado/prado_2.jpg", "/public/cars/Toyota Land Cruiser Prado/prado_3.jpg", "/public/cars/Toyota Land Cruiser Prado/prado_4.jpg", "/public/cars/Toyota Land Cruiser Prado/prado_5.jpg", "/public/cars/Toyota Land Cruiser Prado/prado_6.jpg", "/public/cars/Toyota Land Cruiser Prado/prado_7.jpg"],
+      photos: ["/cars/Toyota Land Cruiser Prado/prado_1.jpg", "/cars/Toyota Land Cruiser Prado/prado_2.jpg", "/cars/Toyota Land Cruiser Prado/prado_3.jpg", "/cars/Toyota Land Cruiser Prado/prado_4.jpg", "/cars/Toyota Land Cruiser Prado/prado_5.jpg", "/cars/Toyota Land Cruiser Prado/prado_6.jpg", "/cars/Toyota Land Cruiser Prado/prado_7.jpg"],
     },
     {
       name: "Toyota Camry 75",
       year: "2022",
       specs: ["2,5л","5 мест","передний привод"],
       price: "от 45.000 ₸/день",
-      photos: ["/public/cars/Toyota Camry 75/camry_1.png", "/public/cars/Toyota Camry 75/camry_2.png", "/public/cars/Toyota Camry 75/camry_3.png", "/public/cars/Toyota Camry 75/camry_4.png", "/public/cars/Toyota Camry 75/camry_5.png", "/public/cars/Toyota Camry 75/camry_6.png", "/public/cars/Toyota Camry 75/camry_7.png"],
+      photos: ["/cars/Toyota Camry 75/camry_1.png", "/cars/Toyota Camry 75/camry_2.png", "/cars/Toyota Camry 75/camry_3.png", "/cars/Toyota Camry 75/camry_4.png", "/cars/Toyota Camry 75/camry_5.png", "/cars/Toyota Camry 75/camry_6.png", "/cars/Toyota Camry 75/camry_7.png"],
     },
   ];
 
@@ -123,7 +123,8 @@ function App() {
   };
 
   return (
-  <div className="app">
+    <div>
+      <div className="app">
       <header className="navbar">
         <div className="logo">ADC<span>Rent</span></div>
         <nav>
@@ -138,7 +139,7 @@ function App() {
   id="home"
   className="hero"
   style={{
-    backgroundImage: "url('car_photo_2.png')",
+    backgroundImage: "url('/cars/car_photo_2.png')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -170,7 +171,6 @@ function App() {
     </button>
   </div>
 </section>
-
 
       <section id="cars" className="cars">
         <h2>Наши <span>Автомобили</span></h2>
@@ -230,7 +230,11 @@ function App() {
         <p>© 2025 ADC Rent. Все права защищены.</p>
       </footer>
     </div>
+
+    </div>
+  
   );
 }
 
 export default App;
+
