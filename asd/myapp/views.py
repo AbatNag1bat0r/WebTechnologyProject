@@ -1,18 +1,23 @@
-from rest_framework import viewsets
-from rest_framework.decorators import api_view
+from rest_framework import generics
 from rest_framework.response import Response
 from .models import Car
 from .serializers import CarSerializer
 
-class CarViewSet(viewsets.ModelViewSet):
-    queryset = Car.objects.all()
+class CarListView(generics.ListAPIView):
+    queryset = Car.objects.filter(is_available=True).prefetch_related('specifications', 'photos')
     serializer_class = CarSerializer
 
-@api_view(['GET'])
-def car_list(request):
-    cars = Car.objects.all()
-    serializer = CarSerializer(cars, many=True, context={'request': request})
-    return Response(serializer.data)
+    def get_serializer_context(self):
+        context = super().get_serializer_context()
+        context['request'] = self.request
+        return context
 
-def react_app(request):
-    return render(request, 'index.html')
+class CarDetailView(generics.RetrieveAPIView):
+    queryset = Car.objects.filter(is_available=True).prefetch_related('specifications', 'photos')
+    serializer_class = CarSerializer
+    lookup_field = 'id'
+
+    def get_serializer_context(self):
+        context = super().get_serializer_context()
+        context['request'] = self.request
+        return context
