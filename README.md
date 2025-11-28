@@ -1,0 +1,199 @@
+# React + TypeScript + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
+
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
+
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
+
+«Система аренды автомобилей Qozgal»
+1. ВВЕДЕНИЕ (INTRODUCTION)
+Название проекта: «Qozgal» (рабочее название)
+
+Краткое описание:  
+Данный проект представляет собой учебную веб-платформу для аренды автомобилей. Система позволит пользователям добавлять автомобили, искать и бронировать их онлайн. Основная цель проекта — разработка работающего прототипа сайта с базовыми функциями: регистрацией пользователей, управлением автомобилями, бронированием и системой уведомлений.
+
+Цели проекта:  
+1.Изучить процесс командной разработки веб-приложений.  
+2.Реализовать базовый функционал системы аренды автомобилей.  
+3.Научиться работать с базами данных, аутентификацией и системой ролей.  
+4.Отработать навыки работы с GitHub и документацией.  
+5.Подготовить проект для защиты в университете.  
+
+Задачи проекта:  
+1.Реализовать регистрацию и аутентификацию пользователей.  
+2.Создать личный кабинет для арендатора и владельца авто.  
+3.Разработать функционал добавления и редактирования автомобилей.  
+4.Настроить поиск и фильтрацию по ключевым параметрам.  
+5.Реализовать систему бронирования авто.  
+6.Сделать базовые уведомления (email или всплывающие сообщения).  
+7.Подготовить отчёт и презентацию проекта.
+
+Целевая аудитория:
+1.Студенты и преподаватели университета (как учебная работа).
+2.Потенциальные пользователи (арендатор, владелец авто).
+3.Администратор (для управления системой).
+
+2. ОБЩАЯ ИНФОРМАЦИЯ О ПРОЕКТЕ
+Общий функционал и логика:
+1.Регистрация и вход: пользователи создают аккаунт и входят в систему.
+2.Личный кабинет: разные роли (арендатор, владелец авто).
+3.Добавление автомобилей: владелец добавляет машину с фото, описанием и ценой.
+4.Поиск и фильтрация: поиск по марке, модели, цене и городу.
+5.Бронирование: арендатор выбирает автомобиль и отправляет запрос на аренду.
+6.Уведомления: система сообщает пользователю о новых бронированиях.
+7.Отзывы (базово): арендатор может оставить отзыв после аренды.
+
+Роли пользователей:  
+1.Арендатор – ищет и бронирует авто.  
+2.Владелец авто – добавляет и управляет своими машинами.  
+3.Администратор – следит за системой, может блокировать пользователей или авто.  
+
+3. ТРЕБОВАНИЯ К СИСТЕМЕ (FUNCTIONAL REQUIREMENTS)  
+1. Функциональные требования  
+Регистрация и вход в систему.  
+Личный кабинет с профилем.  
+Добавление/редактирование/удаление автомобилей.  
+Поиск и фильтрация автомобилей.  
+Бронирование автомобилей.  
+Уведомления о бронировании.  
+Админ-панель для управления системой.
+
+2. Нефункциональные требования  
+Простота интерфейса (понятный дизайн).  
+Адаптивность для ПК и мобильных устройств.  
+Минимальные требования к производительности (локальный сервер).  
+Безопасность (шифрование паролей, защита от SQL-инъекций).  
+
+4. ПЛАН РАБОТЫ (15 недель)  
+1 неделя:  
+Определение темы и целей проекта.  
+Сбор требований (что будет реализовано).  
+Подготовка начальной документации (README).  
+
+2 неделя:  
+Проектирование структуры базы данных (Пользователь, Автомобиль, Бронирование).  
+Выбор технологий (например: Django/Node.js, PostgreSQL/MySQL).  
+Настройка виртуального окружения.
+
+3 неделя:  
+Реализация базового проекта (инициализация).  
+Подключение базы данных.  
+Старт работы с GitHub (репозиторий).
+
+4 неделя:  
+Разработка регистрации и входа в систему.  
+Реализация личного кабинета пользователя.
+
+5 неделя:  
+Создание профиля арендатора и владельца.  
+Роли пользователей в системе.
+
+6 неделя:  
+Разработка функционала добавления автомобиля.  
+Загрузка фото и информации об авто.
+
+7 неделя:  
+Создание страницы поиска автомобилей.  
+Реализация базовой фильтрации (по цене, марке).
+
+8 неделя:  
+Разработка модуля бронирования автомобилей.  
+Отправка запросов на аренду.
+
+9 неделя:  
+Календарь доступности автомобилей (базовый вариант).  
+Проверка на пересечения по датам.
+
+10 неделя:  
+Реализация уведомлений (email или system alerts).  
+Настройка обратной связи с пользователем.
+
+11 неделя:  
+Создание админ-панели.  
+Управление пользователями и автомобилями.
+
+12 неделя:  
+Реализация системы отзывов (простая форма).  
+Отображение рейтингов автомобилей.
+
+13 неделя:  
+Тестирование основных функций (регистрация, поиск, бронирование).  
+Исправление ошибок.
+
+14 неделя:  
+Подготовка отчёта и презентации проекта.  
+Финальные исправления.
+
+15 неделя:  
+Защита проекта.  
+Демонстрация работы сайта.
+
+Вот визуальный вид структуры база данных:  
+![Описание картинки](БД_проект.png)
